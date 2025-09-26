@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Waveform</title>
+
+    <link rel="stylesheet" href="./styles.css" />
+    <script defer src="./waveform.js"></script>
+  </head>
+  <body>
+    <h1>Waveform Visualizer</h1>
+
+    <div class="controls">
+      <input type="file" name="audio" id="audioFileInput" accept="audio/*" />
+    </div>
+
+    <canvas id="waveformCanvas" width="800" height="400"></canvas>
+
+    <script type="module">
+      import { Waveform } from './waveform.js';
+    </script>
+  </body>
+</html>
