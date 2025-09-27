@@ -18,7 +18,18 @@
     <canvas id="waveformCanvas" width="800" height="400"></canvas>
 
     <script type="module">
-      import { Waveform } from './waveform.js';
+      import { WaveformVisualizer } from './waveform.js';
+
+      const visualizer = new WaveformVisualizer('waveformCanvas');
+
+      document
+        .getElementById('audioFileInput')
+        .addEventListener('change', (event) => {
+          const file = event.target.files[0];
+          if (file) {
+            visualizer.loadAudioFile(file);
+          }
+        });
     </script>
   </body>
 </html>
