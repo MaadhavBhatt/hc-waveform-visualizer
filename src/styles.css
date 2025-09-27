@@ -1,4 +1,11 @@
 :root {
+  --clr-bg-1: #0a0a0a;
+  --clr-bg-2: #1a1a1a;
+  --clr-bg-3: #333;
+
+  --clr-text-1: #fff;
+  --clr-text-2: #ccc;
+
   font-size: 10px;
 }
 
@@ -11,13 +18,13 @@
 body {
   font-family: 'Segoe UI', sans-serif;
   margin: 2rem;
-  background-color: #1a1a1a;
-  color: white;
+  background-color: var(--clr-bg-2);
+  color: var(--clr-text-1);
 }
 
 #waveform-canvas {
-  border: 1px solid #333;
-  background-color: #000;
+  border: 1px solid var(--clr-bg-3);
+  background-color: var(--clr-bg-1);
   width: 100%;
   max-width: 80rem;
   height: 20rem;
@@ -30,8 +37,8 @@ body {
 input[type='file'] {
   margin: 1rem 0;
   padding: 1rem;
-  background-color: #333;
-  color: white;
+  background-color: var(--clr-bg-3);
+  color: var(--clr-text-1);
   border: none;
   border-radius: 4px;
 }
