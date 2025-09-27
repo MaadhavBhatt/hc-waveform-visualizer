@@ -22,7 +22,7 @@ body {
   color: var(--clr-text-1);
 }
 
-#waveform-canvas {
+#waveformCanvas {
   border: 1px solid var(--clr-bg-3);
   background-color: var(--clr-bg-1);
   width: 100%;
